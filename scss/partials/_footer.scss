@@ -1,0 +1,18 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+footer{
+    // Con la palabra extend traemos a todos los extend
+    @extend .header-footer;
+    // Con la palabra include citamos a todos los mixins
+    @include flexibilizar-centrar;
+    a{
+        // En los mixing sin parametros borramos todos los datos dentro de los parentesis
+        // @include estilos-de-anclas (text-decoration, font-family);
+        @mixin estilos-de-anclas ($decoracion, $tipo-de-letras-en-anclas) {
+                text-decoration: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+    }
+}

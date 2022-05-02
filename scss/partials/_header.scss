@@ -1,0 +1,17 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+header{
+    // Con la palabra extend traemos a todos los extend
+    @extend .header-footer;
+    nav{
+        // Con la palabra include traemos a todos los mixins
+        @include flexibilizar-centrar;
+        a{
+            // En los mixing sin parametros borramos todos los datos dentro de los parentesis
+            @include estilos-de-anclas;
+        }
+    }
+    
+}

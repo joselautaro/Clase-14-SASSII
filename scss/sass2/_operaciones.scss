@@ -1,0 +1,11 @@
+@import "../variables/variables";
+
+.box_uno {
+         background-color: $blue;
+          width: $ancho/2; /* Ancho de 360*/
+}
+.box_dos {
+            background-color: $green;
+             width: ($ancho/2)-50;
+            /*Dividimos por 2 y le restamos 50*/
+}

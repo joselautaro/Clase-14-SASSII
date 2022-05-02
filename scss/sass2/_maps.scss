@@ -1,0 +1,15 @@
+@import "../variables/variables";
+
+// Lo que nos permite el los maps es que 
+
+$redes:(
+    color: $blue,
+    centro: center,
+    fSize: 40px,
+    ancho: 16px,
+);
+
+div{
+    background-color: map-get($redes, ancho);
+    width: map-get($redes, ancho);
+}

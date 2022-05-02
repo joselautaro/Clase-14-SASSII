@@ -1,0 +1,20 @@
+@import "../variables/variables";
+
+@mixin flexibilizar-centrar {
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin fuentes{
+    font-family: $tipo-de-letra;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: bold;
+}
+// @mixin estilos-de-anclas ($decoracion, $tipo-de-letras-en-anclas) {
+//     text-decoration: none;
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+// }
+@mixin estilos-de-anclas {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
